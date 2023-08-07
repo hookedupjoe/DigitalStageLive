@@ -1,0 +1,39 @@
+<div class="ui segment basic slim">
+  <div class="ui message">
+    <div class="ui button blue basic circular" pageaction="playAlbum">
+      Play Album
+    </div>
+  </div>
+  <div class="ui form">
+    <div item="pagetabs" class="mar0 pad0 ui top attached tabular menu ">
+      <a appuse="tablinks" group="maintabs" item="devices" pageaction="showSubPage" class="item blue active ">Devices</a>
+      <a appuse="tablinks" group="maintabs" item="favs" pageaction="showSubPage" class="item blue">Favorites</a>
+    </div>
+    <div class=" ui  bottom attached slim blue segment   ">
+      <div tab="" appuse="cards" group="maintabs" item="devices" class="pad0 ">
+        <div class="ui message medium blue">
+          Current Device: <b pagespot="current-device-name">(none)</b>
+        </div>
+        <div class="ui button fluid" pageaction="refreshDeviceList">Refresh</div>
+
+        <div class="ui header medium blue center aligned">
+          Available Devices
+        </div>
+        <div pagespot="show-devices">
+
+
+
+
+        </div>
+      </div>
+      <div tab="" appuse="cards" group="maintabs" item="favs" class="pad0  hidden ">
+        <div class="ui header medium blue">
+          My Favs
+        </div>
+        <div pagespot="show-favs"></div>
+      </div>
+    </div>
+  </div>
+
+
+</div>

@@ -1,0 +1,65 @@
+<div class="ui segment basic slim">
+  <div class="ui header blue">
+    Spotify Controller
+  </div>
+
+
+  <div appuse="cards" group="statustabs" item="new" class="pad0 hidden">
+    <div class="ui header blue medium">
+      Welcome to Spotify Connect
+    </div>
+    <div class="ui message blue">
+      To get started, create a new spotify application in the developers console and enter the client id (no need to provide your secret key).
+      <div class="pad5"></div>
+      <div class="ui button blue" pageaction="setClientID">
+        Set Client ID
+      </div>
+    </div>
+  </div>
+  <div appuse="cards" group="statustabs" item="setup" class="pad0  hidden ">
+    <div class="ui header blue medium">
+      Spotify is setup - get token
+    </div>
+
+
+    <div class="ui button blue" pageaction="login">
+      Get Access Token
+    </div>
+    <div class="pad5"></div>
+    <div class="ui button basic" pageaction="changeClientID">
+      Change Client ID
+    </div>
+
+
+  </div>
+
+  <div appuse="cards" group="statustabs" item="ready" class="pad0   ">
+
+    <div class="ui blue message">
+      <span class="ui black label right pointing">Now Playing: </span>
+      <span class="pad5 ui larger" pagespot="Now Playing">
+
+      </span>
+    </div>
+
+    <div class="ui button blue" pageaction="hitPlay">
+      Play
+    </div>
+
+    <div class="ui button blue" pageaction="hitPause">
+      Pause
+    </div>
+
+    <div class="ui button blue" pageaction="nextTrack">
+      Next Track
+    </div>
+
+    <div class="ui button blue" pageaction="prevTrack">
+      Prev
+    </div>
+
+  </div>
+
+
+
+</div>
