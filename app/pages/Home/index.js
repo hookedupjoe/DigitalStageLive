@@ -136,7 +136,7 @@ window.ThisPageNow = ThisPage;
     //------- --------  --------  --------  --------  --------  --------  -------- 
     //~YourPageCode//~
 var clientId = localStorage.getItem('_spotify_client_id_DigitalPuppet') || '';
-
+var callbackURL = 'https://hookedupjoe.github.io/DigitalStageLive/';
     //var params = new URLSearchParams(window.location.search);
     // async function getAccessToken(theClientId, theCode) {
     //     const verifier = localStorage.getItem("verifier");
@@ -177,7 +177,7 @@ var clientId = localStorage.getItem('_spotify_client_id_DigitalPuppet') || '';
         params.append("client_id", theClientId);
         params.append("grant_type", "authorization_code");
         params.append("code", theCode);
-        params.append("redirect_uri", "http://localhost:33480/DigitalStage/");
+        params.append("redirect_uri", callbackURL);
         params.append("code_verifier", verifier);
 
 
@@ -219,7 +219,7 @@ var clientId = localStorage.getItem('_spotify_client_id_DigitalPuppet') || '';
         const params = new URLSearchParams();
         params.append("client_id", clientId);
         params.append("response_type", "code");
-        params.append("redirect_uri", "http://localhost:33480/DigitalStage/");
+        params.append("redirect_uri", callbackURL);
         params.append("scope", "user-read-private user-read-email user-read-playback-state user-modify-playback-state user-read-currently-playing");
         params.append("code_challenge_method", "S256");
         params.append("code_challenge", challenge);
