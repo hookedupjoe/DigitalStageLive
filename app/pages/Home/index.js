@@ -135,8 +135,12 @@ window.ThisPageNow = ThisPage;
 
     //------- --------  --------  --------  --------  --------  --------  -------- 
     //~YourPageCode//~
+
+//--- Get Client ID via prompt    
 var clientId = localStorage.getItem('_spotify_client_id_DigitalPuppet') || '';
-var callbackURL = 'https://hookedupjoe.github.io/DigitalStageLive/';
+//--- Going to tell the login process to return to this page with the code
+//      we will use that code directly to authenticate and get token 
+var callbackURL = window.location.origin + window.location.pathname;
     //var params = new URLSearchParams(window.location.search);
     // async function getAccessToken(theClientId, theCode) {
     //     const verifier = localStorage.getItem("verifier");
