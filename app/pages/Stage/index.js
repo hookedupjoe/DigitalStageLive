@@ -4,7 +4,7 @@
 
     //~thisPageSpecs//~
 var thisPageSpecs = {
-	"pageName": "Home",
+	"pageName": "Stage",
 	"pageTitle": "Stage",
 	"navOptions": {
 		"topLink": true,

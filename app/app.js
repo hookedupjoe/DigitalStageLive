@@ -5,7 +5,7 @@
   try {
 
 
-    var tmpPageNames = ["Home"];
+    var tmpPageNames = ["Stage","Home"];
     var tmpPluginNames = [];
 
     if (typeof (window.cordova) == 'undefined') {
