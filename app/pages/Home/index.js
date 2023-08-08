@@ -267,7 +267,7 @@ var callbackURL = 'https://hookedupjoe.github.io/DigitalStageLive/';
         if (theStatus == 'ready') {
             refreshDeviceList();
         }
-        ThisPage.showSubPage({ group: 'statustabs', item: theStatus })
+        ThisApp.showSubPage({ group: 'statustabs', item: theStatus })
     }
 
     function apiReplyGood(theResponse) {
